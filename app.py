@@ -16,7 +16,7 @@ def save_data(df):
 
 # --- APP UI ---
 st.set_page_config(page_title="Expense Tracker", layout="wide")
-st.title("💸 Personal Expense Tracker")
+st.title("💸 Expense Tracker")
 
 # Initialize data
 df = load_data()
@@ -26,7 +26,7 @@ with st.sidebar:
     st.header("Add New Expense")
     with st.form("expense_form", clear_on_submit=True):
         exp_date = st.date_input("Date", date.today())
-        category = st.selectbox("Category", ["Food", "Transport", "Rent", "Utilities", "Entertainment", "Other"])
+        category = st.selectbox("Category", ["Food", "Transport", "Rent", "Utilities", "Entertainment", "Nicholas", "Coca-Cola", "Sysco", "Local Markets", "U.S. Foods", "Other"])
         amount = st.number_input("Amount", min_value=0.0, step=0.01)
         description = st.text_input("Description")
         
