@@ -26,7 +26,7 @@ with st.sidebar:
     st.header("Add New Expense")
     with st.form("expense_form", clear_on_submit=True):
         exp_date = st.date_input("Date", date.today())
-        category = st.selectbox("Category", ["Food", "Transport", "Rent", "Utilities", "Entertainment", "Nicholas", "Coca-Cola", "Sysco", "Local Markets", "U.S. Foods", "Other"])
+        category = st.selectbox("Category", ["Food", "Transport", "Rent", "Utilities", "Entertainment", "Nicholas", "Coca-Cola", "Sysco", "Local Markets", "U.S. Foods", "Farmer Brothers Coffee Co.", "Costco", "Other"])
         amount = st.number_input("Amount", min_value=0.0, step=0.01)
         description = st.text_input("Description")
         
